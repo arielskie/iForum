@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iForum — Official Documentation Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --border: #1f293d;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.2);
+      --text-pure: #ffffff;
+      --text-dim: #94a3b8;
+      --green: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-pure);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid var(--accent);
+      color: #60a5fa;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      color: var(--text-dim);
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 12px 30px var(--accent-glow);
+      transform: translateY(-4px);
+    }
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: var(--text-dim);
+      font-size: 14px;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      border-radius: 10px;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      filter: brightness(1.15);
+      transform: scale(1.02);
+    }
+    footer {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 30px;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Official Documentation</span>
+      <h1>iForum Knowledge Base</h1>
+      <p class="lead">Complete setup guides, Firebase configuration, modern comment architecture, and domain licensing documentation.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <div>
+          <div class="card-icon">🚀</div>
+          <h3>Theme Installation</h3>
+          <p>Learn how to restore and configure the iForum template on Blogger without breaking layouts.</p>
+        </div>
+        <a href="setup/installation.md" class="btn">Read Installation Guide →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🔥</div>
+          <h3>Firebase Setup & RTDB</h3>
+          <p>Step-by-step instructions to configure Realtime Database rules, Google Auth, and sync post views.</p>
+        </div>
+        <a href="setup/firebase-setup.md" class="btn">Read Firebase Guide →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🛡️</div>
+          <h3>License System & Activation</h3>
+          <p>How the domain-locked DJB2 verification works and how to activate your key inside Blogger Theme Setup.</p>
+        </div>
+        <a href="setup/license-activation.md" class="btn">Read License Guide →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">💬</div>
+          <h3>Comments & Nested Replies</h3>
+          <p>Deep-dive into the modern comments section, rich editing toolbar, emojis, and best answer ribbons.</p>
+        </div>
+        <a href="features/comments-and-replies.md" class="btn">Read Comments Guide →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🏆</div>
+          <h3>Gamification & Badges</h3>
+          <p>Setup user points, role badges (Admin, Pro, Member), and real-time profile hover card badges.</p>
+        </div>
+        <a href="features/gamification-and-badges.md" class="btn">Read Gamification Guide →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🛠️</div>
+          <h3>Troubleshooting & FAQs</h3>
+          <p>Quick answers to Firebase CORS, 0 view counter debugging, Google login popups, and styling customizations.</p>
+        </div>
+        <a href="setup/troubleshooting-faq.md" class="btn">Read Troubleshooting →</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>iForum Documentation Repository • Crafted by AbeFilm • For assistance, contact <a href="https://t.me/ayengcoding">@ayengcoding</a></p>
+    </footer>
+  </div>
+</body>
+</html>
