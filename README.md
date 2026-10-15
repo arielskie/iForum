@@ -33,6 +33,7 @@
 | [**INSTALLATION.md**](docs/setup/installation.md) | Site Owners & Beginners | 4-step installation in Blogger (`Theme → Restore`), layout setup, and initial configuration. |
 | [**FIREBASE_SETUP.md**](docs/setup/firebase-setup.md) | Administrators | Step-by-step setup for Firebase Realtime Database rules, Google Authentication, and authorized domains. |
 | [**LICENSE_SYSTEM.md**](docs/setup/license-activation.md) | Buyers & Webmasters | Standalone HTML DJB2 Hex generator usage, Blogger Theme Setup camouflage, and activation steps. |
+| [**TYPOGRAPHY_AND_STYLING.md**](docs/features/typography-and-formatting.md) | Content Creators & Posters | Official formatting guide: Live Code Playground (Sandbox), Semantic Alerts, Accordions, Spoilers, and Download Lockers. |
 | [**COMMENTS_SYSTEM.md**](docs/features/comments-and-replies.md) | Developers & Customizers | Full structure of the modern nested comment system, sorting engine, and action triggers. |
 | [**COMMUNITY_AND_GAMIFICATION.md**](docs/features/gamification-and-badges.md) | Community Managers | Role badges (Admin, Member, Newbie), reputation score tracking, and leaderboards. |
 | [**PAGES_AND_SETUP.md**](docs/setup/pages-setup.md) | Webmasters | Ready-to-use template HTML for Guidelines, Help Center, Privacy Policy, and Terms of Service. |
